@@ -1,151 +1,12 @@
 <!DOCTYPE HTML>  
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css">
 <title>Job Posting Form</title>
-<style>
-    /* Global Styles */
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f4f7f6;
-        color: #333;
-        line-height: 1.6;
-        padding: 20px;
-        margin: 0;
-    }
-
-    /* Container Styles */
-    .form-container {
-        background: #ffffff;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 40px;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-
-    /* Typography */
-    h2 {
-        text-align: center;
-        color: #2c3e50;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 15px;
-        margin-bottom: 30px;
-    }
-    h3 {
-        color: #2980b9;
-        margin-top: 40px;
-        margin-bottom: 15px;
-        border-bottom: 1px solid #ecf0f1;
-        padding-bottom: 5px;
-    }
-    
-    /* Form Elements */
-    .form-group {
-        margin-bottom: 20px;
-    }
-    label {
-        display: block;
-        font-weight: 600;
-        margin-bottom: 8px;
-        color: #34495e;
-    }
-    input[type="text"],
-    input[type="number"],
-    select,
-    textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #bdc3c7;
-        border-radius: 4px;
-        box-sizing: border-box; /* Ensures padding doesn't affect 100% width */
-        font-family: inherit;
-        font-size: 15px;
-        transition: border-color 0.3s ease;
-    }
-    input[type="text"]:focus,
-    input[type="number"]:focus,
-    select:focus,
-    textarea:focus {
-        border-color: #3498db;
-        outline: none;
-    }
-    
-    /* Radio Buttons */
-    .radio-group {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        padding: 10px 0;
-    }
-    .radio-group label {
-        display: inline-flex;
-        align-items: center;
-        font-weight: normal;
-        margin-bottom: 0;
-        cursor: pointer;
-    }
-    .radio-group input[type="radio"] {
-        margin-right: 8px;
-        cursor: pointer;
-    }
-
-    /* Submit Button */
-    input[type="submit"] {
-        background-color: #3498db;
-        color: white;
-        padding: 15px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: bold;
-        width: 100%;
-        margin-top: 30px;
-        transition: background-color 0.3s ease, transform 0.1s ease;
-    }
-    input[type="submit"]:hover {
-        background-color: #2980b9;
-    }
-    input[type="submit"]:active {
-        transform: scale(0.99);
-    }
-
-    /* Utilities */
-    .error {
-        color: #e74c3c;
-        font-size: 0.9em;
-        margin-top: 5px;
-        display: block;
-    }
-    .required-asterisk {
-        color: #e74c3c;
-    }
-    .help-text {
-        font-size: 0.85em;
-        color: #7f8c8d;
-        margin-bottom: 10px;
-        display: block;
-        font-style: italic;
-    }
-
-    /* Output Results Container */
-    .result-container {
-        background: #e8f8f5;
-        border-left: 5px solid #1abc9c;
-        padding: 25px;
-        margin-top: 40px;
-        border-radius: 0 4px 4px 0;
-    }
-    .result-container h2 {
-        border-bottom-color: #1abc9c;
-        color: #16a085;
-    }
-    .result-container h3 {
-        color: #16a085;
-    }
-</style>
 </head>
 <body>  
 
@@ -439,5 +300,4 @@ function test_input($data) {
 </div>
 
 </body>
-
 </html>

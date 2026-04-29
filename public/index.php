@@ -1,9 +1,53 @@
+<?php
+// Mock Data for Jobs
+$jobs = [
+    [
+        "id" => 1,
+        "title" => "Senior UI/UX Designer",
+        "company" => "FPT Software",
+        "tags" => ["Hot", "Remote"],
+        "salary" => "$1500 - $2500",
+        "post_date" => "2 days ago"
+    ],
+    [
+        "id" => 2,
+        "title" => "Backend PHP Developer",
+        "company" => "VNG Corporation",
+        "tags" => ["PHP", "Laravel"],
+        "salary" => "Negotiable",
+        "post_date" => "Today"
+    ],
+    [
+        "id" => 3,
+        "title" => "Marketing Manager",
+        "company" => "Shopee Vietnam",
+        "tags" => ["Urgent"],
+        "salary" => "$1000 - $2000",
+        "post_date" => "1 week ago"
+    ]
+];
+
+// Mock Data for Sidebar Filters
+$filters = [
+    "Industry" => ["IT - Software", "Marketing", "Design", "Sales"],
+    "Job Type" => ["Full-time", "Part-time", "Freelance"],
+    "Job Level" => ["Intern", "Fresher", "Junior", "Senior", "Manager"],
+    "Salary" => ["Under $500", "$500 - $1000", "Over $1000"],
+    "Work Model" => ["On-site", "Remote", "Hybrid"],
+    "Skills" => ["React", "PHP", "Figma", "SEO"]
+];
+
+$totalResults = 1250;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../app/view/pages/css/styles.css">
     <title>Job Search - All Users</title>
 </head>
 <body>
@@ -31,7 +75,7 @@
 
         <div class="content-wrapper">
             
-            <!-- <aside class="sidebar">
+            <aside class="sidebar">
                 <?php foreach($filters as $filterName => $options): ?>
                     <div class="filter-group">
                         <h3 class="filter-title"><?php echo htmlspecialchars($filterName); ?></h3>
@@ -45,7 +89,7 @@
                         </ul>
                     </div>
                 <?php endforeach; ?>
-            </aside> -->
+            </aside>
 
             <main class="main-content">
                 
@@ -90,8 +134,8 @@
                 </div>
 
             </main>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         </div>
     </div>
 
 </body>
+</html>
