@@ -31,6 +31,8 @@ CREATE TABLE `salary_range` (
 CREATE TABLE `salary_type` (
     `name` VARCHAR(20) PRIMARY KEY
 );
+insert into `salary_type`
+values ("Gross"), ("Net");
 
 CREATE TABLE `skill` (
     `name` VARCHAR(30) PRIMARY KEY
