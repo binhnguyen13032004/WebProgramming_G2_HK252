@@ -40,8 +40,51 @@ $filters = [
 $totalResults = 1250;
 ?>
 
+<?php
+// Mock Data for Jobs
+$jobs = [
+    [
+        "id" => 1,
+        "title" => "Senior UI/UX Designer",
+        "company" => "FPT Software",
+        "tags" => ["Hot", "Remote"],
+        "salary" => "$1500 - $2500",
+        "post_date" => "2 days ago"
+    ],
+    [
+        "id" => 2,
+        "title" => "Backend PHP Developer",
+        "company" => "VNG Corporation",
+        "tags" => ["PHP", "Laravel"],
+        "salary" => "Negotiable",
+        "post_date" => "Today"
+    ],
+    [
+        "id" => 3,
+        "title" => "Marketing Manager",
+        "company" => "Shopee Vietnam",
+        "tags" => ["Urgent"],
+        "salary" => "$1000 - $2000",
+        "post_date" => "1 week ago"
+    ]
+];
+
+// Mock Data for Sidebar Filters
+$filters = [
+    "Industry" => ["IT - Software", "Marketing", "Design", "Sales"],
+    "Job Type" => ["Full-time", "Part-time", "Freelance"],
+    "Job Level" => ["Intern", "Fresher", "Junior", "Senior", "Manager"],
+    "Salary" => ["Under $500", "$500 - $1000", "Over $1000"],
+    "Work Model" => ["On-site", "Remote", "Hybrid"],
+    "Skills" => ["React", "PHP", "Figma", "SEO"]
+];
+
+$totalResults = 1250;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,6 +119,7 @@ $totalResults = 1250;
 
         <div class="content-wrapper">
             
+            <aside class="sidebar">
             <aside class="sidebar">
                 <?php foreach($filters as $filterName => $options): ?>
                     <div class="filter-group">
