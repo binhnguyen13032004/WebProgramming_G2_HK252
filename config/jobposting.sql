@@ -24,8 +24,8 @@ CREATE TABLE `job_level` (
 insert into `job_level`
 values ("Junior"), ("Mid"), ("Senior");
 
-CREATE TABLE `salary_range` (
-    `range` VARCHAR(40) PRIMARY KEY
+CREATE TABLE `salary` (
+    `milestone` int PRIMARY KEY
 );
 
 CREATE TABLE `salary_type` (
@@ -90,7 +90,8 @@ create table `job_vacancy` (
     `job_responsibilities` varchar(1000) not null,
     `required_qualifications` varchar(1000) not null,
     `preferred_skills` varchar(1000) not null,
-    `notes` varchar(500) not null
+    `notes` varchar(500) not null,
+    `date_created` date not null
 );
 
 create table `job_information` (
@@ -134,11 +135,13 @@ create table `required_skills` (
 
 create table `salary_benefits` (
 	`job_id` int primary key,
-    `range` varchar(40) not null,
+    `min` int not null,
+    `max` int not null,
     `type` varchar(20) not null,
     `benefits` varchar(1000) not null,
 	foreign key (`job_id`) references `job_vacancy`(`id`),
-    foreign key (`range`) references `salary_range`(`range`),
+    foreign key (`min`) references `salary`(`milestone`),
+    foreign key (`max`) references `salary`(`milestone`),
     foreign key (`type`) references `salary_type`(`name`)
 );
 

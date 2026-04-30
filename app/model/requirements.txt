@@ -1,0 +1,4 @@
+mysql
+bcrypt
+flask
+flask_cors
