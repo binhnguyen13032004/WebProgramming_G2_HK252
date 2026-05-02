@@ -1,0 +1,6 @@
+mysql
+bcrypt
+flask
+flask_session
+flask_cors
+email_validator
